@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    image: php:8.2-apache
+    container_name: signup_web
+    ports:
+      - "8081:80"
+    volumes:
+      - ./signup-system:/var/www/html
