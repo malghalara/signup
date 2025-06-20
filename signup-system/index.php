@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             
             // Check if user already exists
             if (checkUserExists($conn, $formData['username'], $formData['email'])) {
-                $errors['general'] = 'Username or email already exists';
+                $errors['general'] = 'Username or email already exists!!!!';
             } else {
                 // Insert new user
                 $query = "INSERT INTO users (first_name, last_name, username, email, password) 
